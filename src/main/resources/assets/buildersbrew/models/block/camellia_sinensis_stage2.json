@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/crop",
+    "textures": {
+        "crop": "buildersbrew:block/camellia_sinensis_stage2"
+    }
+}
