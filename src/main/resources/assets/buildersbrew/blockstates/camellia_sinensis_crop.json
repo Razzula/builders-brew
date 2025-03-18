@@ -11,6 +11,18 @@
         },
         "age=3": {
             "model": "buildersbrew:block/camellia_sinensis_stage3"
+        },
+        "age=4": {
+            "model": "buildersbrew:block/camellia_sinensis_stage4"
+        },
+        "age=5": {
+            "model": "buildersbrew:block/camellia_sinensis_stage5"
+        },
+        "age=6": {
+            "model": "buildersbrew:block/camellia_sinensis_stage5"
+        },
+        "age=7": {
+            "model": "buildersbrew:block/camellia_sinensis_stage5"
         }
     }
 }

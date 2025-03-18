@@ -1,0 +1,146 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "buildersbrew:tea_leaves",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "minecraft:explosion_decay"
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "buildersbrew:camellia_sinensis_crop",
+                    "properties": { "age": 4 }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "buildersbrew:tea_leaves",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 3
+                            }
+                        },
+                        {
+                            "function": "minecraft:explosion_decay"
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "buildersbrew:camellia_sinensis_crop",
+                    "properties": { "age": 5 }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "buildersbrew:tea_leaves",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 4
+                            }
+                        },
+                        {
+                            "function": "minecraft:explosion_decay"
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "buildersbrew:camellia_sinensis_crop",
+                    "properties": { "age": 6 }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "buildersbrew:tea_leaves",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 6
+                            }
+                        },
+                        {
+                            "function": "minecraft:explosion_decay"
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "buildersbrew:camellia_sinensis_crop",
+                    "properties": { "age": 7 }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "buildersbrew:camellia_sinensis_seeds",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:block_state_property",
+                    "block": "buildersbrew:camellia_sinensis_crop",
+                    "properties": { "age": 7 }
+                },
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.75
+                }
+            ]
+        }
+    ]
+}
