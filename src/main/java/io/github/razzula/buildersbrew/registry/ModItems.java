@@ -6,7 +6,7 @@ import io.github.razzula.buildersbrew.item.TeaLeafItem;
 import io.github.razzula.buildersbrew.item.TeaFanningsItem;
 import io.github.razzula.buildersbrew.item.MugItem;
 import io.github.razzula.buildersbrew.item.MugTeaItem;
-
+import io.github.razzula.buildersbrew.item.TeaBoxItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -17,10 +17,6 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BuildersBrew.MODID);
-
-    public static final RegistryObject<Item> TEST_BLOCK_ITEM = ITEMS.register("test_block",
-        () -> new BlockItem(ModBlocks.TEST_BLOCK.get(), new Item.Properties())
-    );
 
     // TEA SEEDS
     public static final RegistryObject<Item> CAMELLIA_SINENSIS_SEEDS = ITEMS.register("camellia_sinensis_seeds",
@@ -46,6 +42,11 @@ public class ModItems {
     );
     public static final RegistryObject<Item> MUG_TEA = ITEMS.register("mug_tea",
         () -> new MugTeaItem(new Item.Properties())
+    );
+
+    // BOXES
+    public static final RegistryObject<Item> TEA_BOX_ITEM = ITEMS.register("tea_box",
+        () -> new TeaBoxItem(ModBlocks.TEA_BOX.get(), new Item.Properties())
     );
 
     // register all of the items

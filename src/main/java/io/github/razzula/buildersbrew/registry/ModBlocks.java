@@ -9,22 +9,25 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import io.github.razzula.buildersbrew.BuildersBrew;
-import io.github.razzula.buildersbrew.block.TestBlock;
+import io.github.razzula.buildersbrew.block.TeaBoxBlock;
 import io.github.razzula.buildersbrew.block.CamelliaSinensisCrop;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BuildersBrew.MODID);
 
-    public static final RegistryObject<Block> TEST_BLOCK = BLOCKS.register("test_block", TestBlock::new);
 
+    // CROP
     public static final RegistryObject<Block> CAMELLIA_SINENSIS_CROP = BLOCKS.register("camellia_sinensis_crop",
         () -> new CamelliaSinensisCrop(
             BlockBehaviour.Properties.copy(Blocks.WHEAT)
-                .noCollission()
-                .randomTicks()
-                .instabreak()
-            )
+            .noCollission()
+            .randomTicks()
+            .instabreak()
+        )
     );
+
+    // TEA BOXES
+    public static final RegistryObject<Block> TEA_BOX = BLOCKS.register("tea_box", TeaBoxBlock::new);
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

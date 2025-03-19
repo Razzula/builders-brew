@@ -4,7 +4,9 @@ import io.github.razzula.buildersbrew.BuildersBrew;
 import io.github.razzula.buildersbrew.item.TeaLeafItem;
 import io.github.razzula.buildersbrew.item.DriedTeaLeafItem;
 import io.github.razzula.buildersbrew.item.TeaFanningsItem;
+import io.github.razzula.buildersbrew.item.TeaBoxItem;
 import io.github.razzula.buildersbrew.item.TeaType;
+import io.github.razzula.buildersbrew.item.TeaFlavour;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -22,7 +24,7 @@ public class ModCreativeTabs {
     public static final RegistryObject<CreativeModeTab> BUILDERS_BREW_TAB = CREATIVE_TABS.register("buildersbrew_tab",
         () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.buildersbrew"))
-            .icon(() -> new ItemStack(ModItems.TEA_LEAF.get()))
+            .icon(() -> new ItemStack(ModItems.TEA_BOX_ITEM.get()))
             .displayItems((parameters, output) -> {
                 ModItems.ITEMS.getEntries().forEach(item -> {
                     ItemStack baseStack = item.get().getDefaultInstance();
@@ -36,6 +38,13 @@ public class ModCreativeTabs {
                         for (TeaType type : TeaType.values()) {
                             ItemStack variantStack = baseStack.copy();
                             TeaType.setTeaType(variantStack, type);
+                            output.accept(variantStack);
+                        }
+                    }
+                    else if (itemInstance instanceof TeaBoxItem) {
+                        for (TeaFlavour type : TeaFlavour.values()) {
+                            ItemStack variantStack = baseStack.copy();
+                            TeaFlavour.setTeaFlavour(variantStack, type);
                             output.accept(variantStack);
                         }
                     }

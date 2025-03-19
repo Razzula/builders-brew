@@ -2,6 +2,7 @@ package io.github.razzula.buildersbrew.event;
 
 import javax.annotation.Nullable;
 
+import io.github.razzula.buildersbrew.item.TeaFlavour;
 import io.github.razzula.buildersbrew.item.TeaType;
 import io.github.razzula.buildersbrew.registry.ModBlocks;
 import io.github.razzula.buildersbrew.registry.ModItems;
@@ -45,6 +46,14 @@ public class ClientModEvents {
             ItemProperties.register(ModItems.TEA_FANNINGS.get(), new ResourceLocation("tea_type"),
                 (ItemStack stack, @Nullable ClientLevel level, @Nullable LivingEntity entity, int seed) -> {
                     return TeaType.getTeaType(stack).ordinal();
+                }
+            );
+        });
+
+        event.enqueueWork(() -> {
+            ItemProperties.register(ModItems.TEA_BOX_ITEM.get(), new ResourceLocation("tea_flavour"),
+                (ItemStack stack, @Nullable ClientLevel level, @Nullable LivingEntity entity, int seed) -> {
+                    return TeaFlavour.getTeaFlavour(stack).ordinal();
                 }
             );
         });
