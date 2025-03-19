@@ -6,6 +6,7 @@ import io.github.razzula.buildersbrew.item.DriedTeaLeafItem;
 import io.github.razzula.buildersbrew.item.TeaFanningsItem;
 import io.github.razzula.buildersbrew.item.TeaBoxItem;
 import io.github.razzula.buildersbrew.item.TeaBagItem;
+import io.github.razzula.buildersbrew.item.MugTeaItem;
 import io.github.razzula.buildersbrew.item.TeaType;
 import io.github.razzula.buildersbrew.item.TeaFlavour;
 
@@ -43,6 +44,7 @@ public class ModCreativeTabs {
                     }
                     else if (itemInstance instanceof TeaFanningsItem
                         || itemInstance instanceof TeaBagItem
+                        || itemInstance instanceof MugTeaItem
                     ) {
                         for (TeaType type : TeaType.values()) {
                             ItemStack variantStack = baseStack.copy();

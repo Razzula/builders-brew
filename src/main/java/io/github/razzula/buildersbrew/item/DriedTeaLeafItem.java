@@ -18,7 +18,7 @@ public class DriedTeaLeafItem extends Item {
     @Override
     public void appendHoverText(@Nonnull ItemStack stack, @Nullable Level level, @Nonnull List<Component> tooltip, @Nonnull TooltipFlag flag) {
         TeaType type = TeaType.getTeaType(stack);
-        tooltip.add(Component.literal("(" + type.getDriedName() + ")"));
+        tooltip.add(Component.literal(type.getDriedName()));
         super.appendHoverText(stack, level, tooltip, flag);
     }
 }

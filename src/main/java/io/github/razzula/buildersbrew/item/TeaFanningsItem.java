@@ -23,7 +23,7 @@ public class TeaFanningsItem extends Item {
             ? TeaFlavour.getTeaFlavour(stack).getName() // use tea flavour to tooltip for black tea
             : teaType.getDriedName(); // use type for other teas
 
-        tooltip.add(Component.literal("(" + name + ")"));
+        tooltip.add(Component.literal(name));
         super.appendHoverText(stack, level, tooltip, flag);
     }
 }
