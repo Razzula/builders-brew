@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "buildersbrew:tea_leaves",
+                    "name": "buildersbrew:tea_leaf",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -34,7 +34,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "buildersbrew:tea_leaves",
+                    "name": "buildersbrew:tea_leaf",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -62,7 +62,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "buildersbrew:tea_leaves",
+                    "name": "buildersbrew:tea_leaf",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -90,7 +90,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "buildersbrew:tea_leaves",
+                    "name": "buildersbrew:tea_leaf",
                     "functions": [
                         {
                             "function": "minecraft:set_count",

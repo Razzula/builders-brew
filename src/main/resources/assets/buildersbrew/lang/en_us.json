@@ -1,8 +1,12 @@
 {
-    "itemGroup.buildersbrew": "Builder's Brew",
-    "item.buildersbrew.tea_leaves": "Tea Leaves",
+    "itemGroup.buildersbrew": "Builders' Brews",
+    "item.buildersbrew.tea_leaf": "Tea Leaf",
+    "item.buildersbrew.dried_tea_leaf": "Treated Tea Leaf",
+    "item.buildersbrew.tea_fannings": "Tea Fannings",
+    "item.buildersbrew.empty_tea_bag": "Empty Tea Bag",
+    "item.buildersbrew.tea_bag": "Tea Bag",
     "item.buildersbrew.camellia_sinensis_seeds": "Camellia Sinensis Seeds",
-    "block.buildersbrew.camellia_sinensis_crop.seed": "Camellia Sinensis Seed",
+    "block.buildersbrew.camellia_sinensis_crop.seed": "Camellia Sinensis Seedling",
     "block.buildersbrew.camellia_sinensis_crop.sprout": "Camellia Sinensis Sprout",
     "block.buildersbrew.camellia_sinensis_crop.bush": "Camellia Sinensis Bush"
 }
