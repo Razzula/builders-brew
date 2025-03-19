@@ -1,44 +1,44 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "buildersbrew:item/tea_fannings_white"
+        "layer0": "buildersbrew:item/tea_bag_white"
     },
     "overrides": [
         {
             "predicate": {
                 "tea_variant": 1
             },
-            "model": "buildersbrew:item/tea_fannings_green"
+            "model": "buildersbrew:item/tea_bag_green"
         },
         {
             "predicate": {
                 "tea_variant": 2
             },
-            "model": "buildersbrew:item/tea_fannings_oolong"
+            "model": "buildersbrew:item/tea_bag_oolong"
         },
         {
             "predicate": {
                 "tea_variant": 3
             },
-            "model": "buildersbrew:item/tea_fannings_black"
+            "model": "buildersbrew:item/tea_bag_black"
         },
         {
             "predicate": {
                 "tea_variant": 11
             },
-            "model": "buildersbrew:item/tea_fannings_black_decaf"
+            "model": "buildersbrew:item/tea_bag_black_decaf"
         },
         {
             "predicate": {
                 "tea_variant": 12
             },
-            "model": "buildersbrew:item/tea_fannings_black_hard"
+            "model": "buildersbrew:item/tea_bag_black_hard"
         },
         {
             "predicate": {
                 "tea_variant": 13
             },
-            "model": "buildersbrew:item/tea_fannings_black_gold"
+            "model": "buildersbrew:item/tea_bag_black_gold"
         }
     ]
 }

@@ -11,8 +11,8 @@ import javax.annotation.Nullable;
 
 import java.util.List;
 
-public class TeaFanningsItem extends Item {
-    public TeaFanningsItem(Properties properties) {
+public class TeaBagItem extends Item {
+    public TeaBagItem(Properties properties) {
         super(properties);
     }
 

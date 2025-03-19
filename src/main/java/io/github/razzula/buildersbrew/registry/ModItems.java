@@ -7,7 +7,7 @@ import io.github.razzula.buildersbrew.item.TeaFanningsItem;
 import io.github.razzula.buildersbrew.item.MugItem;
 import io.github.razzula.buildersbrew.item.MugTeaItem;
 import io.github.razzula.buildersbrew.item.TeaBoxItem;
-import net.minecraft.world.item.BlockItem;
+import io.github.razzula.buildersbrew.item.TeaBagItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -42,6 +42,14 @@ public class ModItems {
     );
     public static final RegistryObject<Item> MUG_TEA = ITEMS.register("mug_tea",
         () -> new MugTeaItem(new Item.Properties())
+    );
+
+    // TEABAGS
+    public static final RegistryObject<Item> TEA_BAG_EMPTY = ITEMS.register("tea_bag_empty",
+        () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> TEA_BAG = ITEMS.register("tea_bag",
+        () -> new TeaBagItem(new Item.Properties())
     );
 
     // BOXES

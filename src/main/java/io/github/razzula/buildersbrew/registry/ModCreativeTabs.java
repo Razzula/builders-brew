@@ -5,6 +5,7 @@ import io.github.razzula.buildersbrew.item.TeaLeafItem;
 import io.github.razzula.buildersbrew.item.DriedTeaLeafItem;
 import io.github.razzula.buildersbrew.item.TeaFanningsItem;
 import io.github.razzula.buildersbrew.item.TeaBoxItem;
+import io.github.razzula.buildersbrew.item.TeaBagItem;
 import io.github.razzula.buildersbrew.item.TeaType;
 import io.github.razzula.buildersbrew.item.TeaFlavour;
 
@@ -33,12 +34,29 @@ public class ModCreativeTabs {
                     // handle NBT variants
                     if (itemInstance instanceof TeaLeafItem
                         || itemInstance instanceof DriedTeaLeafItem
-                        || itemInstance instanceof TeaFanningsItem
                     ) {
                         for (TeaType type : TeaType.values()) {
                             ItemStack variantStack = baseStack.copy();
                             TeaType.setTeaType(variantStack, type);
                             output.accept(variantStack);
+                        }
+                    }
+                    else if (itemInstance instanceof TeaFanningsItem
+                        || itemInstance instanceof TeaBagItem
+                    ) {
+                        for (TeaType type : TeaType.values()) {
+                            ItemStack variantStack = baseStack.copy();
+                            TeaType.setTeaType(variantStack, type);
+                            if (type == TeaType.BLACK) {
+                                for (TeaFlavour flavour : TeaFlavour.values()) {
+                                    ItemStack flavourStack = variantStack.copy();
+                                    TeaFlavour.setTeaFlavour(flavourStack, flavour);
+                                    output.accept(flavourStack);
+                                }
+                            }
+                            else {
+                                output.accept(variantStack);
+                            }
                         }
                     }
                     else if (itemInstance instanceof TeaBoxItem) {
