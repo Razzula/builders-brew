@@ -8,5 +8,7 @@
     "item.buildersbrew.camellia_sinensis_seeds": "Camellia Sinensis Seeds",
     "block.buildersbrew.camellia_sinensis_crop.seed": "Camellia Sinensis Seedling",
     "block.buildersbrew.camellia_sinensis_crop.sprout": "Camellia Sinensis Sprout",
-    "block.buildersbrew.camellia_sinensis_crop.bush": "Camellia Sinensis Bush"
+    "block.buildersbrew.camellia_sinensis_crop.bush": "Camellia Sinensis Bush",
+    "item.buildersbrew.mug": "Mug",
+    "item.buildersbrew.mug_tea": "Mug of Tea"
 }

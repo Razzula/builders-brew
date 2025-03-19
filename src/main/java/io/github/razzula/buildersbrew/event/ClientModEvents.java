@@ -1,6 +1,6 @@
 package io.github.razzula.buildersbrew.event;
 
-import org.jetbrains.annotations.Nullable;
+import javax.annotation.Nullable;
 
 import io.github.razzula.buildersbrew.item.TeaType;
 import io.github.razzula.buildersbrew.registry.ModBlocks;

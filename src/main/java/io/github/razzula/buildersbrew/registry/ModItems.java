@@ -4,6 +4,8 @@ import io.github.razzula.buildersbrew.BuildersBrew;
 import io.github.razzula.buildersbrew.item.DriedTeaLeafItem;
 import io.github.razzula.buildersbrew.item.TeaLeafItem;
 import io.github.razzula.buildersbrew.item.TeaFanningsItem;
+import io.github.razzula.buildersbrew.item.MugItem;
+import io.github.razzula.buildersbrew.item.MugTeaItem;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -36,6 +38,14 @@ public class ModItems {
     // FANNINGS
     public static final RegistryObject<Item> TEA_FANNINGS = ITEMS.register("tea_fannings",
         () -> new TeaFanningsItem(new Item.Properties())
+    );
+
+    // MUG
+    public static final RegistryObject<Item> MUG = ITEMS.register("mug",
+        () -> new MugItem(new Item.Properties())
+    );
+    public static final RegistryObject<Item> MUG_TEA = ITEMS.register("mug_tea",
+        () -> new MugTeaItem(new Item.Properties())
     );
 
     // register all of the items
