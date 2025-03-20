@@ -69,6 +69,19 @@ public class ClientModEvents {
         });
 
         event.enqueueWork(() -> {
+            ItemProperties.register(ModItems.MUG_TEA.get(), new ResourceLocation("tea_variant"),
+                (ItemStack stack, @Nullable ClientLevel level, @Nullable LivingEntity entity, int seed) -> {
+                    TeaType type = TeaType.getTeaType(stack);
+                    if (type == TeaType.BLACK) {
+                        // offset ordinal to separate tea flavour from types clearly
+                        return 10 + TeaFlavour.getTeaFlavour(stack).ordinal();
+                    }
+                    return type.ordinal();
+                }
+            );
+        });
+
+        event.enqueueWork(() -> {
             ItemProperties.register(ModItems.TEA_BOX_ITEM.get(), new ResourceLocation("tea_flavour"),
                 (ItemStack stack, @Nullable ClientLevel level, @Nullable LivingEntity entity, int seed) -> {
                     return TeaFlavour.getTeaFlavour(stack).ordinal();

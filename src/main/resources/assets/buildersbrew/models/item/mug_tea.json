@@ -1,6 +1,80 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "buildersbrew:item/mug_tea"
-    }
+        "layer0": "buildersbrew:item/mug_tea_white"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "tea_variant": 1
+            },
+            "model": "buildersbrew:item/mug_tea_green"
+        },
+        {
+            "predicate": {
+                "tea_variant": 2
+            },
+            "model": "buildersbrew:item/mug_tea_oolong"
+        },
+        {
+            "predicate": {
+                "tea_variant": 3
+            },
+            "model": "buildersbrew:item/mug_tea_black"
+        },
+        {
+            "predicate": {
+                "tea_variant": 11
+            },
+            "model": "buildersbrew:item/mug_tea_black_decaf"
+        },
+        {
+            "predicate": {
+                "tea_variant": 12
+            },
+            "model": "buildersbrew:item/mug_tea_black_hard"
+        },
+        {
+            "predicate": {
+                "tea_variant": 13
+            },
+            "model": "buildersbrew:item/mug_tea_black_gold"
+        },
+        {
+            "predicate": {
+                "tea_variant": 14
+            },
+            "model": "buildersbrew:item/mug_tea_black_bedtime"
+        },
+        {
+            "predicate": {
+                "tea_variant": 15
+            },
+            "model": "buildersbrew:item/mug_tea_black_biscuit"
+        },
+        {
+            "predicate": {
+                "tea_variant": 16
+            },
+            "model": "buildersbrew:item/mug_tea_black_caramel"
+        },
+        {
+            "predicate": {
+                "tea_variant": 17
+            },
+            "model": "buildersbrew:item/mug_tea_black_jammy"
+        },
+        {
+            "predicate": {
+                "tea_variant": 18
+            },
+            "model": "buildersbrew:item/mug_tea_black_breakfast"
+        },
+        {
+            "predicate": {
+                "tea_variant": 19
+            },
+            "model": "buildersbrew:item/mug_tea_black_strong"
+        }
+    ]
 }

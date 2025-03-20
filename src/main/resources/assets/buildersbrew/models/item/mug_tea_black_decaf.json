@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "buildersbrew:item/mug_tea_black_decaf"
+  }
+}
