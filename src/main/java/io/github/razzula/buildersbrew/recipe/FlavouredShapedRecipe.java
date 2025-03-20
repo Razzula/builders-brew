@@ -14,6 +14,7 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.nbt.CompoundTag;
 
 import io.github.razzula.buildersbrew.registry.ModItems;
+import io.github.razzula.buildersbrew.registry.ModRecipeSerializers;
 
 public class FlavouredShapedRecipe extends ShapedRecipe {
 

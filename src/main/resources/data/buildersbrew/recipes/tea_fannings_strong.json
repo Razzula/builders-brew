@@ -1,0 +1,15 @@
+{
+    "type": "buildersbrew:crafting_flavouring",
+    "ingredients": [
+        {
+            "item": "buildersbrew:tea_fannings"
+        },
+        {
+            "item": "buildersbrew:caffeine"
+        }
+    ],
+    "result": {
+        "item": "buildersbrew:tea_fannings"
+    },
+    "flavour_variant": "STRONG"
+}

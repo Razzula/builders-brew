@@ -1,0 +1,18 @@
+{
+    "type": "buildersbrew:crafting_flavouring",
+    "ingredients": [
+        {
+            "item": "buildersbrew:tea_fannings"
+        },
+        {
+            "item": "buildersbrew:jam"
+        },
+        {
+            "item": "buildersbrew:toast"
+        }
+    ],
+    "result": {
+        "item": "buildersbrew:tea_fannings"
+    },
+    "flavour_variant": "JAMMY"
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "buildersbrew:nuts"
+    },
+    "result": "buildersbrew:nutmeg",
+    "count": 1
+}

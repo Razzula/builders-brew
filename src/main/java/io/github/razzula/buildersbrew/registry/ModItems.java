@@ -8,6 +8,7 @@ import io.github.razzula.buildersbrew.item.MugItem;
 import io.github.razzula.buildersbrew.item.MugTeaItem;
 import io.github.razzula.buildersbrew.item.TeaBoxItem;
 import io.github.razzula.buildersbrew.item.TeaBagItem;
+import io.github.razzula.buildersbrew.item.ToastItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -44,6 +45,11 @@ public class ModItems {
         () -> new MugTeaItem(new Item.Properties())
     );
 
+    //TEAPOT
+    public static final RegistryObject<Item> TEAPOT_ITEM = ITEMS.register("teapot",
+        () -> new Item(new Item.Properties())
+    );
+
     // TEABAGS
     public static final RegistryObject<Item> TEA_BAG_EMPTY = ITEMS.register("tea_bag_empty",
         () -> new Item(new Item.Properties())
@@ -55,6 +61,29 @@ public class ModItems {
     // BOXES
     public static final RegistryObject<Item> TEA_BOX_ITEM = ITEMS.register("tea_box",
         () -> new TeaBoxItem(ModBlocks.TEA_BOX.get(), new Item.Properties())
+    );
+
+    // MISC. ITEMS
+    public static final RegistryObject<Item> TOAST = ITEMS.register("toast",
+        () -> new ToastItem(new Item.Properties())
+    );
+    public static final RegistryObject<Item> JAM = ITEMS.register("jam",
+        () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> CARAMEL = ITEMS.register("caramel",
+        () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> LEMON = ITEMS.register("lemon",
+        () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> NUTS = ITEMS.register("nuts",
+        () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> NUTMEG = ITEMS.register("nutmeg",
+        () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> CAFFEINE = ITEMS.register("caffeine",
+        () -> new Item(new Item.Properties())
     );
 
     // register all of the items

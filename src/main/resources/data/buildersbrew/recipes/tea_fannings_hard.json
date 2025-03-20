@@ -1,0 +1,15 @@
+{
+    "type": "buildersbrew:crafting_flavouring",
+    "ingredients": [
+        {
+            "item": "buildersbrew:tea_fannings"
+        },
+        {
+            "item": "minecraft:gravel"
+        }
+    ],
+    "result": {
+        "item": "buildersbrew:tea_fannings"
+    },
+    "flavour_variant": "HARD"
+}

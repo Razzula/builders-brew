@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "buildersbrew:tea_leaf"
+    },
+    "result": "buildersbrew:tea_fannings",
+    "count": 1
+}

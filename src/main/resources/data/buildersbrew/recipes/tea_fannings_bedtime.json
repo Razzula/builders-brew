@@ -1,0 +1,18 @@
+{
+    "type": "buildersbrew:crafting_flavouring",
+    "ingredients": [
+        {
+            "item": "buildersbrew:tea_fannings"
+        },
+        {
+            "item": "buildersbrew:lemon"
+        },
+        {
+            "item": "buildersbrew:nutmeg"
+        }
+    ],
+    "result": {
+        "item": "buildersbrew:tea_fannings"
+    },
+    "flavour_variant": "BEDTIME"
+}
