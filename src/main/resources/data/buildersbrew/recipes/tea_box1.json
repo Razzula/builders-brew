@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "TTT",
+        "TTT",
+        "TTT"
+    ],
+    "key": {
+        "T": {
+            "item": "buildersbrew:tea_bag"
+        }
+    },
+    "result": {
+        "item": "buildersbrew:tea_box",
+        "count": 1
+    }
+}

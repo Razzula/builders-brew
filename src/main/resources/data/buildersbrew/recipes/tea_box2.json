@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "buildersbrew:tea_box"
+        }
+    ],
+    "result": {
+        "item": "buildersbrew:tea_bag",
+        "count": 9
+    }
+}

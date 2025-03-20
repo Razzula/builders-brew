@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " P ",
+        "   ",
+        " P "
+    ],
+    "key": {
+        "P": {
+            "item": "minecraft:paper"
+        }
+    },
+    "result": {
+        "item": "buildersbrew:tea_bag_empty",
+        "count": 1
+    }
+}
