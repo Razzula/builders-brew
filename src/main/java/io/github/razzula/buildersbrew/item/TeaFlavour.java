@@ -7,10 +7,14 @@ public enum TeaFlavour {
     STANDARD("Proper Brew"),
     DECAF("Decaf"),
     HARD("Hard Water"),
-    GOLD("Gold");
-    // BEDTIME("Bedtime"),
-    // BISCUIT("Biscuit"),
-    // JAMMY("Toast & Jam");
+    GOLD("Gold"),
+    BEDTIME("Bedtime"),
+    BISCUIT("Malty Biscuit"),
+    CARAMEL("Caramelised Biscuit"),
+    JAMMY("Toast & Jam"),
+    BREAKFAST("Breakfast"),
+    // BREAKTIME("Breakfast"), // https://www.yorkshiretea.co.uk/brew-news/new-places-to-find-our-new-brews
+    STRONG("Proper Strong"); //https://www.yorkshiretea.com.au/our-teas#proper-strong
 
     private final String name;
 

@@ -39,6 +39,42 @@
                 "tea_variant": 13
             },
             "model": "buildersbrew:item/tea_fannings_black_gold"
+        },
+        {
+            "predicate": {
+                "tea_variant": 14
+            },
+            "model": "buildersbrew:item/tea_fannings_black_bedtime"
+        },
+        {
+            "predicate": {
+                "tea_variant": 15
+            },
+            "model": "buildersbrew:item/tea_fannings_black_biscuit"
+        },
+        {
+            "predicate": {
+                "tea_variant": 16
+            },
+            "model": "buildersbrew:item/tea_fannings_black_caramel"
+        },
+        {
+            "predicate": {
+                "tea_variant": 17
+            },
+            "model": "buildersbrew:item/tea_fannings_black_jammy"
+        },
+        {
+            "predicate": {
+                "tea_variant": 18
+            },
+            "model": "buildersbrew:item/tea_fannings_black_breakfast"
+        },
+        {
+            "predicate": {
+                "tea_variant": 19
+            },
+            "model": "buildersbrew:item/tea_fannings_black_strong"
         }
     ]
 }

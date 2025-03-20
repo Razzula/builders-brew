@@ -21,6 +21,42 @@
                 "tea_flavour": 3
             },
             "model": "buildersbrew:item/tea_box_gold"
+        },
+        {
+            "predicate": {
+                "tea_flavour": 4
+            },
+            "model": "buildersbrew:item/tea_box_bedtime"
+        },
+        {
+            "predicate": {
+                "tea_flavour": 5
+            },
+            "model": "buildersbrew:item/tea_box_biscuit"
+        },
+        {
+            "predicate": {
+                "tea_flavour": 6
+            },
+            "model": "buildersbrew:item/tea_box_caramel"
+        },
+        {
+            "predicate": {
+                "tea_flavour": 7
+            },
+            "model": "buildersbrew:item/tea_box_jammy"
+        },
+        {
+            "predicate": {
+                "tea_flavour": 8
+            },
+            "model": "buildersbrew:item/tea_box_breakfast"
+        },
+        {
+            "predicate": {
+                "tea_flavour": 9
+            },
+            "model": "buildersbrew:item/tea_box_strong"
         }
     ]
 }
