@@ -1,5 +1,6 @@
 package io.github.razzula.buildersbrew;
 
+import io.github.razzula.buildersbrew.recipe.ModRecipeSerializers;
 import io.github.razzula.buildersbrew.registry.ModBlocks;
 import io.github.razzula.buildersbrew.registry.ModCreativeTabs;
 import io.github.razzula.buildersbrew.registry.ModItems;
@@ -18,5 +19,7 @@ public class BuildersBrew {
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
+        ModRecipeSerializers.SERIALIZERS.register(modEventBus);
+
     }
 }

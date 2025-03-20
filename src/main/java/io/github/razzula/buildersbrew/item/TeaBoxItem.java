@@ -21,7 +21,7 @@ public class TeaBoxItem extends BlockItem {
     @Override
     public void appendHoverText(@Nonnull ItemStack stack, @Nullable Level level, @Nonnull List<Component> tooltip, @Nonnull TooltipFlag flag) {
         TeaFlavour type = TeaFlavour.getTeaFlavour(stack);
-        tooltip.add(Component.literal("(" + type.getName() + ")"));
+        tooltip.add(Component.literal(type.getName()));
         super.appendHoverText(stack, level, tooltip, flag);
     }
 }
