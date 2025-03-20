@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   " ,
+    "x x" ,
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "result": {
+    "item": "buildersbrew:mug"
+  }
+}
