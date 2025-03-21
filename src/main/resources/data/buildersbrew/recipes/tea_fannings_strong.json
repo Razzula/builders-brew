@@ -6,10 +6,13 @@
         },
         {
             "item": "buildersbrew:caffeine"
+        },
+        {
+            "item": "minecraft:gunpowder"
         }
     ],
     "result": {
         "item": "buildersbrew:tea_fannings"
     },
-    "flavour_variant": "STRONG"
+    "output_flavour": "STRONG"
 }

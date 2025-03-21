@@ -5,14 +5,11 @@
             "item": "buildersbrew:tea_fannings"
         },
         {
-            "item": "buildersbrew:jam"
-        },
-        {
-            "item": "buildersbrew:toast"
+            "item": "buildersbrew:caffeine"
         }
     ],
     "result": {
         "item": "buildersbrew:tea_fannings"
     },
-    "output_flavour": "JAMMY"
+    "output_flavour": "BREAKFAST"
 }

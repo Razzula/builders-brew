@@ -32,5 +32,5 @@
     "result": {
         "item": "buildersbrew:tea_fannings"
     },
-    "flavour_variant": "GOLD"
+    "output_flavour": "GOLD"
 }

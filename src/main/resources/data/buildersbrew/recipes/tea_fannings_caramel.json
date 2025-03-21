@@ -14,5 +14,5 @@
     "result": {
         "item": "buildersbrew:tea_fannings"
     },
-    "flavour_variant": "CARAMEL"
+    "output_flavour": "CARAMEL"
 }

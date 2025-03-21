@@ -11,5 +11,5 @@
     "result": {
         "item": "buildersbrew:tea_fannings"
     },
-    "flavour_variant": "BISCUIT"
+    "output_flavour": "BISCUIT"
 }

@@ -11,5 +11,12 @@
     "block.buildersbrew.camellia_sinensis_crop.bush": "Camellia Sinensis Bush",
     "item.buildersbrew.mug": "Mug",
     "item.buildersbrew.mug_tea": "Mug of Tea",
-    "block.buildersbrew.tea_box": "Tea from Yorkshire"
+    "block.buildersbrew.tea_box": "Tea from Yorkshire",
+    "item.buildersbrew.toast": "Toast",
+    "item.buildersbrew.jam": "Jam",
+    "item.buildersbrew.lemon": "Lemon",
+    "item.buildersbrew.nuts": "Nuts",
+    "item.buildersbrew.nutmeg": "Nutmeg",
+    "item.buildersbrew.caramel": "Caramel",
+    "item.buildersbrew.caffeine": "Caffeine"
 }

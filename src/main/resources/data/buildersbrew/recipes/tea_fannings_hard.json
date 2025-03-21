@@ -11,5 +11,5 @@
     "result": {
         "item": "buildersbrew:tea_fannings"
     },
-    "flavour_variant": "HARD"
+    "output_flavour": "HARD"
 }

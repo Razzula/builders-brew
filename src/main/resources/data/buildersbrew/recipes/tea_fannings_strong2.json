@@ -5,14 +5,12 @@
             "item": "buildersbrew:tea_fannings"
         },
         {
-            "item": "buildersbrew:jam"
-        },
-        {
-            "item": "buildersbrew:toast"
+            "item": "minecraft:gunpowder"
         }
     ],
     "result": {
         "item": "buildersbrew:tea_fannings"
     },
-    "output_flavour": "JAMMY"
+    "input_flavour": "BREAKFAST",
+    "output_flavour": "STRONG"
 }

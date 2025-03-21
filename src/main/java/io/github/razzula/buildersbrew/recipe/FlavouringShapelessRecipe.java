@@ -3,28 +3,37 @@ package io.github.razzula.buildersbrew.recipe;
 import javax.annotation.Nonnull;
 
 import com.google.gson.JsonObject;
+
+import io.github.razzula.buildersbrew.item.TeaFlavour;
+import io.github.razzula.buildersbrew.item.TeaType;
+import io.github.razzula.buildersbrew.registry.ModItems;
+import io.github.razzula.buildersbrew.registry.ModRecipeSerializers;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.RegistryAccess;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.CraftingContainer;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.*;
-import net.minecraft.nbt.CompoundTag;
-
-import io.github.razzula.buildersbrew.registry.ModItems;
-import io.github.razzula.buildersbrew.registry.ModRecipeSerializers;
-import io.github.razzula.buildersbrew.item.TeaType;
-import io.github.razzula.buildersbrew.item.TeaFlavour;
+import net.minecraft.world.item.crafting.CraftingBookCategory;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.Recipe;
+import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.ShapelessRecipe;
 
 public class FlavouringShapelessRecipe extends ShapelessRecipe {
 
-    private final String flavourVariant;
+    private final String inputFlavour;
+    private final String outputFlavour;
 
-    public FlavouringShapelessRecipe(ResourceLocation id, String group, CraftingBookCategory category, NonNullList<Ingredient> ingredients, ItemStack result, String flavourVariant) {
+    public FlavouringShapelessRecipe(
+        ResourceLocation id, String group, CraftingBookCategory category, NonNullList<Ingredient> ingredients, ItemStack result,
+        String inputFlavour, String outputFlavour
+    ) {
         super(id, group, category, result, ingredients);
-        this.flavourVariant = flavourVariant;
+        this.inputFlavour = inputFlavour;
+        this.outputFlavour = outputFlavour;
     }
 
     @Override
@@ -60,15 +69,14 @@ public class FlavouringShapelessRecipe extends ShapelessRecipe {
             // only allow black tea to be flavoured
             return ItemStack.EMPTY;
         }
-        if (!teaFlavour.equals(String.valueOf(TeaFlavour.STANDARD))) {
-            // only allow unflavoured tea to be flavoured
+        if (!teaFlavour.equals(this.inputFlavour)) {
             return ItemStack.EMPTY;
         }
 
         // create the output item and copy NBT
         ItemStack resultStack = getResultItem(registryAccess).copy();
         CompoundTag newTag = tag.copy();
-        newTag.putString("TeaFlavour", this.flavourVariant);
+        newTag.putString("TeaFlavour", this.outputFlavour);
         resultStack.setTag(newTag);
 
         return resultStack;
@@ -85,22 +93,29 @@ public class FlavouringShapelessRecipe extends ShapelessRecipe {
         @Override
         public Recipe<?> fromJson(@Nonnull ResourceLocation id, @Nonnull JsonObject json) {
             ShapelessRecipe recipe = shapelessSerializer.fromJson(id, json);
-            String flavourVariant = json.get("flavour_variant").getAsString();
-            return new FlavouringShapelessRecipe(id, recipe.getGroup(), recipe.category(), recipe.getIngredients(), recipe.getResultItem(RegistryAccess.EMPTY), flavourVariant);
+            String inputFlavour = json.has("input_flavour") ? json.get("input_flavour").getAsString() : "STANDARD";
+            String outputFlavour = json.get("output_flavour").getAsString();
+            return new FlavouringShapelessRecipe(id, recipe.getGroup(), recipe.category(), recipe.getIngredients(),
+                recipe.getResultItem(RegistryAccess.EMPTY), inputFlavour, outputFlavour
+            );
         }
 
         @Override
         public Recipe<?> fromNetwork(@Nonnull ResourceLocation id, @Nonnull FriendlyByteBuf buffer) {
             ShapelessRecipe recipe = shapelessSerializer.fromNetwork(id, buffer);
-            String flavourVariant = buffer.readUtf();
-            return new FlavouringShapelessRecipe(id, recipe.getGroup(), recipe.category(), recipe.getIngredients(), recipe.getResultItem(RegistryAccess.EMPTY), flavourVariant);
+            String inputFlavour = buffer.readUtf();
+            String outputFlavour = buffer.readUtf();
+            return new FlavouringShapelessRecipe(id, recipe.getGroup(), recipe.category(), recipe.getIngredients(),
+                recipe.getResultItem(RegistryAccess.EMPTY), inputFlavour, outputFlavour
+            );
         }
 
         @Override
         public void toNetwork(@Nonnull FriendlyByteBuf buffer, @Nonnull Recipe<?> recipe) {
             if (recipe instanceof FlavouringShapelessRecipe flavouringRecipe) {
                 shapelessSerializer.toNetwork(buffer, flavouringRecipe);
-                buffer.writeUtf(flavouringRecipe.flavourVariant);
+                buffer.writeUtf(flavouringRecipe.inputFlavour);
+                buffer.writeUtf(flavouringRecipe.outputFlavour);
             }
         }
     }

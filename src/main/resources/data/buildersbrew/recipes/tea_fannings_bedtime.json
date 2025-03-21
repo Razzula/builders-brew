@@ -14,5 +14,6 @@
     "result": {
         "item": "buildersbrew:tea_fannings"
     },
-    "flavour_variant": "BEDTIME"
+    "input_flavour": "DECAF",
+    "output_flavour": "BEDTIME"
 }
