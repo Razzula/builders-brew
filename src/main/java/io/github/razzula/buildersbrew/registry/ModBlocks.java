@@ -27,7 +27,8 @@ public class ModBlocks {
     );
 
     // TEA BOXES
-    public static final RegistryObject<Block> TEA_BOX = BLOCKS.register("tea_box", TeaBoxBlock::new);
+    public static final RegistryObject<Block> TEA_BOX = BLOCKS.register("tea_box",
+            () -> new TeaBoxBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

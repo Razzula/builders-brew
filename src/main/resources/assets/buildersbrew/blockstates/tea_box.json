@@ -1,7 +1,19 @@
 {
     "variants": {
-        "": {
+        "facing=north": {
             "model": "buildersbrew:block/tea_box"
+        },
+        "facing=south": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 180
+        },
+        "facing=east": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 270
         }
     }
 }
