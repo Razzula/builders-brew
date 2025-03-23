@@ -1,17 +1,161 @@
 {
     "variants": {
-        "facing=north": {
+        "tea_flavour=standard,facing=north": {
             "model": "buildersbrew:block/tea_box"
         },
-        "facing=south": {
-            "model": "buildersbrew:block/tea_box",
-            "y": 180
-        },
-        "facing=east": {
+        "tea_flavour=standard,facing=east": {
             "model": "buildersbrew:block/tea_box",
             "y": 90
         },
-        "facing=west": {
+        "tea_flavour=standard,facing=south": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 180
+        },
+        "tea_flavour=standard,facing=west": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 270
+        },
+
+        "tea_flavour=decaf,facing=north": {
+            "model": "buildersbrew:block/tea_box_decaf"
+        },
+        "tea_flavour=decaf,facing=east": {
+            "model": "buildersbrew:block/tea_box_decaf",
+            "y": 90
+        },
+        "tea_flavour=decaf,facing=south": {
+            "model": "buildersbrew:block/tea_box_decaf",
+            "y": 180
+        },
+        "tea_flavour=decaf,facing=west": {
+            "model": "buildersbrew:block/tea_box_decaf",
+            "y": 270
+        },
+
+        "tea_flavour=hard,facing=north": {
+            "model": "buildersbrew:block/tea_box"
+        },
+        "tea_flavour=hard,facing=east": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 90
+        },
+        "tea_flavour=hard,facing=south": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 180
+        },
+        "tea_flavour=hard,facing=west": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 270
+        },
+
+        "tea_flavour=gold,facing=north": {
+            "model": "buildersbrew:block/tea_box"
+        },
+        "tea_flavour=gold,facing=east": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 90
+        },
+        "tea_flavour=gold,facing=south": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 180
+        },
+        "tea_flavour=gold,facing=west": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 270
+        },
+
+        "tea_flavour=bedtime,facing=north": {
+            "model": "buildersbrew:block/tea_box"
+        },
+        "tea_flavour=bedtime,facing=east": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 90
+        },
+        "tea_flavour=bedtime,facing=south": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 180
+        },
+        "tea_flavour=bedtime,facing=west": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 270
+        },
+
+        "tea_flavour=biscuit,facing=north": {
+            "model": "buildersbrew:block/tea_box"
+        },
+        "tea_flavour=biscuit,facing=east": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 90
+        },
+        "tea_flavour=biscuit,facing=south": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 180
+        },
+        "tea_flavour=biscuit,facing=west": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 270
+        },
+
+        "tea_flavour=caramel,facing=north": {
+            "model": "buildersbrew:block/tea_box"
+        },
+        "tea_flavour=caramel,facing=east": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 90
+        },
+        "tea_flavour=caramel,facing=south": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 180
+        },
+        "tea_flavour=caramel,facing=west": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 270
+        },
+
+        "tea_flavour=jammy,facing=north": {
+            "model": "buildersbrew:block/tea_box"
+        },
+        "tea_flavour=jammy,facing=east": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 90
+        },
+        "tea_flavour=jammy,facing=south": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 180
+        },
+        "tea_flavour=jammy,facing=west": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 270
+        },
+
+        "tea_flavour=breakfast,facing=north": {
+            "model": "buildersbrew:block/tea_box"
+        },
+        "tea_flavour=breakfast,facing=east": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 90
+        },
+        "tea_flavour=breakfast,facing=south": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 180
+        },
+        "tea_flavour=breakfast,facing=west": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 270
+        },
+
+        "tea_flavour=strong,facing=north": {
+            "model": "buildersbrew:block/tea_box"
+        },
+        "tea_flavour=strong,facing=east": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 90
+        },
+        "tea_flavour=strong,facing=south": {
+            "model": "buildersbrew:block/tea_box",
+            "y": 180
+        },
+        "tea_flavour=strong,facing=west": {
             "model": "buildersbrew:block/tea_box",
             "y": 270
         }

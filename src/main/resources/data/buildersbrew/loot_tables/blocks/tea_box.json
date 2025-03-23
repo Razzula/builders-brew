@@ -6,7 +6,40 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildersbrew:tea_box"
+          "name": "buildersbrew:tea_box",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{TeaFlavour:\"DECAF\"}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "buildersbrew:tea_box",
+              "properties": {
+                "tea_flavour": "decaf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "buildersbrew:tea_box",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "buildersbrew:tea_box",
+              "properties": {
+                "tea_flavour": "standard"
+              }
+            }
+          ]
         }
       ]
     }

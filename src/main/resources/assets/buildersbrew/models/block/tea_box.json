@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"2": "buildersbrew:block/tea_box",
+		"main": "buildersbrew:block/tea_box",
 		"particle": "buildersbrew:block/tea_box"
 	},
 	"elements": [
@@ -10,12 +10,12 @@
 			"to": [12, 8, 12],
 			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 4]},
 			"faces": {
-				"north": {"uv": [1.5, 0, 6.5, 5], "texture": "#2"},
-				"east": {"uv": [0, 10, 5, 15], "texture": "#2"},
-				"south": {"uv": [1.5, 5, 6.5, 10], "texture": "#2"},
-				"west": {"uv": [6, 10, 11, 15], "texture": "#2"},
-				"up": {"uv": [14.5, 5, 9.5, 0], "texture": "#2"},
-				"down": {"uv": [14.5, 5, 9.5, 10], "texture": "#2"}
+				"north": {"uv": [1.5, 0, 6.5, 5], "texture": "#main"},
+				"east": {"uv": [0, 10, 5, 15], "texture": "#main"},
+				"south": {"uv": [1.5, 5, 6.5, 10], "texture": "#main"},
+				"west": {"uv": [6, 10, 11, 15], "texture": "#main"},
+				"up": {"uv": [14.5, 5, 9.5, 0], "texture": "#main"},
+				"down": {"uv": [14.5, 5, 9.5, 10], "texture": "#main"}
 			}
 		}
 	]

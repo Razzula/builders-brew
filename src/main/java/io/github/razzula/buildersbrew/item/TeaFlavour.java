@@ -1,9 +1,10 @@
 package io.github.razzula.buildersbrew.item;
 
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.ItemStack;
 
-public enum TeaFlavour {
+public enum TeaFlavour implements StringRepresentable {
     STANDARD("Proper Brew"),
     DECAF("Decaf"),
     HARD("Hard Water"),
@@ -42,5 +43,10 @@ public enum TeaFlavour {
             }
         }
         return STANDARD;
+    }
+
+    @Override
+    public String getSerializedName() {
+        return name().toLowerCase();
     }
 }
