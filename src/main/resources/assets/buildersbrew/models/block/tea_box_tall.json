@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"main": "tea_box_breakfast",
+		"particle": "block/teabox"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 5],
+			"to": [11, 8, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0, 5]},
+			"faces": {
+				"north": {"uv": [2, 0, 6, 5], "texture": "#main"},
+				"east": {"uv": [0.5, 10, 4.5, 15], "texture": "#main"},
+				"south": {"uv": [2, 5, 6, 10], "texture": "#main"},
+				"west": {"uv": [6.5, 10, 10.5, 15], "texture": "#main"},
+				"up": {"uv": [14, 5, 10, 1], "texture": "#main"},
+				"down": {"uv": [14, 5, 10, 9], "texture": "#main"}
+			}
+		}
+	]
+}

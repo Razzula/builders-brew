@@ -1,0 +1,6 @@
+{
+  "parent": "buildersbrew:block/tea_box",
+  "textures": {
+    "main": "buildersbrew:block/tea_box_strong"
+  }
+}

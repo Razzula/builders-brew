@@ -33,130 +33,130 @@
         },
 
         "tea_flavour=hard,facing=north": {
-            "model": "buildersbrew:block/tea_box"
+            "model": "buildersbrew:block/tea_box_hard"
         },
         "tea_flavour=hard,facing=east": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_hard",
             "y": 90
         },
         "tea_flavour=hard,facing=south": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_hard",
             "y": 180
         },
         "tea_flavour=hard,facing=west": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_hard",
             "y": 270
         },
 
         "tea_flavour=gold,facing=north": {
-            "model": "buildersbrew:block/tea_box"
+            "model": "buildersbrew:block/tea_box_gold"
         },
         "tea_flavour=gold,facing=east": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_gold",
             "y": 90
         },
         "tea_flavour=gold,facing=south": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_gold",
             "y": 180
         },
         "tea_flavour=gold,facing=west": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_gold",
             "y": 270
         },
 
         "tea_flavour=bedtime,facing=north": {
-            "model": "buildersbrew:block/tea_box"
+            "model": "buildersbrew:block/tea_box_bedtime"
         },
         "tea_flavour=bedtime,facing=east": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_bedtime",
             "y": 90
         },
         "tea_flavour=bedtime,facing=south": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_bedtime",
             "y": 180
         },
         "tea_flavour=bedtime,facing=west": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_bedtime",
             "y": 270
         },
 
         "tea_flavour=biscuit,facing=north": {
-            "model": "buildersbrew:block/tea_box"
+            "model": "buildersbrew:block/tea_box_biscuit"
         },
         "tea_flavour=biscuit,facing=east": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_biscuit",
             "y": 90
         },
         "tea_flavour=biscuit,facing=south": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_biscuit",
             "y": 180
         },
         "tea_flavour=biscuit,facing=west": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_biscuit",
             "y": 270
         },
 
         "tea_flavour=caramel,facing=north": {
-            "model": "buildersbrew:block/tea_box"
+            "model": "buildersbrew:block/tea_box_caramel"
         },
         "tea_flavour=caramel,facing=east": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_caramel",
             "y": 90
         },
         "tea_flavour=caramel,facing=south": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_caramel",
             "y": 180
         },
         "tea_flavour=caramel,facing=west": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_caramel",
             "y": 270
         },
 
         "tea_flavour=jammy,facing=north": {
-            "model": "buildersbrew:block/tea_box"
+            "model": "buildersbrew:block/tea_box_jammy"
         },
         "tea_flavour=jammy,facing=east": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_jammy",
             "y": 90
         },
         "tea_flavour=jammy,facing=south": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_jammy",
             "y": 180
         },
         "tea_flavour=jammy,facing=west": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_jammy",
             "y": 270
         },
 
         "tea_flavour=breakfast,facing=north": {
-            "model": "buildersbrew:block/tea_box"
+            "model": "buildersbrew:block/tea_box_breakfast"
         },
         "tea_flavour=breakfast,facing=east": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_breakfast",
             "y": 90
         },
         "tea_flavour=breakfast,facing=south": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_breakfast",
             "y": 180
         },
         "tea_flavour=breakfast,facing=west": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_breakfast",
             "y": 270
         },
 
         "tea_flavour=strong,facing=north": {
-            "model": "buildersbrew:block/tea_box"
+            "model": "buildersbrew:block/tea_box_strong"
         },
         "tea_flavour=strong,facing=east": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_strong",
             "y": 90
         },
         "tea_flavour=strong,facing=south": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_strong",
             "y": 180
         },
         "tea_flavour=strong,facing=west": {
-            "model": "buildersbrew:block/tea_box",
+            "model": "buildersbrew:block/tea_box_strong",
             "y": 270
         }
     }

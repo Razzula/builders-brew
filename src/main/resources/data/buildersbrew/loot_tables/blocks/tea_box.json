@@ -31,6 +31,198 @@
         {
           "type": "minecraft:item",
           "name": "buildersbrew:tea_box",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{TeaFlavour:\"HARD\"}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "buildersbrew:tea_box",
+              "properties": {
+                "tea_flavour": "hard"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "buildersbrew:tea_box",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{TeaFlavour:\"GOLD\"}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "buildersbrew:tea_box",
+              "properties": {
+                "tea_flavour": "gold"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "buildersbrew:tea_box",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{TeaFlavour:\"BEDTIME\"}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "buildersbrew:tea_box",
+              "properties": {
+                "tea_flavour": "bedtime"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "buildersbrew:tea_box",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{TeaFlavour:\"BISCUIT\"}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "buildersbrew:tea_box",
+              "properties": {
+                "tea_flavour": "biscuit"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "buildersbrew:tea_box",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{TeaFlavour:\"CARAMEL\"}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "buildersbrew:tea_box",
+              "properties": {
+                "tea_flavour": "caramel"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "buildersbrew:tea_box",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{TeaFlavour:\"JAMMY\"}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "buildersbrew:tea_box",
+              "properties": {
+                "tea_flavour": "jammy"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "buildersbrew:tea_box",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{TeaFlavour:\"BREAKFAST\"}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "buildersbrew:tea_box",
+              "properties": {
+                "tea_flavour": "breakfast"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "buildersbrew:tea_box",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{TeaFlavour:\"STRONG\"}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "buildersbrew:tea_box",
+              "properties": {
+                "tea_flavour": "strong"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "buildersbrew:tea_box",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
