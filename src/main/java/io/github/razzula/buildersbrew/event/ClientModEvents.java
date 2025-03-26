@@ -25,7 +25,6 @@ public class ClientModEvents {
     public static void onClientSetup(FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CAMELLIA_SINENSIS_CROP.get(), RenderType.cutout());
 
-
         event.enqueueWork(() -> {
             ItemProperties.register(ModItems.TEA_LEAF.get(), new ResourceLocation("tea_type"),
                 (ItemStack stack, @Nullable ClientLevel level, @Nullable LivingEntity entity, int seed) -> {

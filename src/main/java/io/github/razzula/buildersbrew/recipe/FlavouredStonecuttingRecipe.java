@@ -1,7 +1,5 @@
 package io.github.razzula.buildersbrew.recipe;
 
-import java.util.UUID;
-
 import javax.annotation.Nonnull;
 
 import io.github.razzula.buildersbrew.registry.ModRecipeSerializers;
@@ -17,7 +15,7 @@ import net.minecraft.world.level.Level;
 
 public class FlavouredStonecuttingRecipe extends StonecutterRecipe  {
 
-    private static ItemStack lastInput = ItemStack.EMPTY;
+    private static CompoundTag lastInput = null;
 
     public FlavouredStonecuttingRecipe(ResourceLocation id, String group, Ingredient ingredient, ItemStack result) {
         super(id, group, ingredient, result);
@@ -30,12 +28,9 @@ public class FlavouredStonecuttingRecipe extends StonecutterRecipe  {
             boolean matches = ingredient.test(stack);
 
             if (level.isClientSide) {
-                if (matches) {
+                if (!stack.isEmpty() && matches) {
                     // cache input for GUI button
-                    FlavouredStonecuttingRecipe.cacheInput(stack);
-                }
-                else {
-                    FlavouredStonecuttingRecipe.clearCache();
+                    FlavouredStonecuttingRecipe.cacheInput(stack.getTag());
                 }
             }
 
@@ -70,13 +65,10 @@ public class FlavouredStonecuttingRecipe extends StonecutterRecipe  {
 
         if (ingredient.getItems().length > 0) {
             // use correct NBT data for GUI button
-            ItemStack input = lastInput;
+            CompoundTag tag = lastInput;
 
-            if (input.hasTag()) {
-                CompoundTag tag = input.getTag();
-                if (tag != null) {
-                    resultItem.setTag(tag.copy());
-                }
+            if (tag != null) {
+                resultItem.setTag(tag.copy());
             }
         }
 
@@ -88,12 +80,12 @@ public class FlavouredStonecuttingRecipe extends StonecutterRecipe  {
         return ModRecipeSerializers.FLAVOURING_RECIPE_SERIALIZER.get();
     }
 
-    public static void cacheInput(ItemStack input) {
+    public static void cacheInput(CompoundTag input) {
         // TODO: replace global cache with per-player Map<UUID, ItemStack> for multiplayer safety.
         lastInput = input.copy();
     }
 
     public static void clearCache() {
-        lastInput = ItemStack.EMPTY;
+        lastInput = null;
     }
 }
