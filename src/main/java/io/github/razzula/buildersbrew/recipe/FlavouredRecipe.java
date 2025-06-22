@@ -40,6 +40,15 @@ public class FlavouredRecipe {
                     recipe.getResultItem(RegistryAccess.EMPTY), recipe.getExperience(), recipe.getCookingTime()
                 );
             }
+            else if (json.has("ingredient") && json.has("input_type")) {
+                String inputType = json.get("input_type").getAsString();
+                String outputType = json.get("output_type").getAsString();
+                StonecutterRecipe recipe = stonecuttingSerializer.fromJson(id, json);
+                return new FlavouredStonecuttingRecipe(id, recipe.getGroup(),
+                    recipe.getIngredients().get(0), recipe.getResultItem(RegistryAccess.EMPTY),
+                    inputType, outputType
+                );
+            }
             else if (json.has("ingredient")) {
                 // STONECUTTER
                 StonecutterRecipe recipe = stonecuttingSerializer.fromJson(id, json);

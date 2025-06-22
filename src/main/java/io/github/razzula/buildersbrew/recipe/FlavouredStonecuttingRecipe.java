@@ -16,6 +16,14 @@ import net.minecraft.world.level.Level;
 public class FlavouredStonecuttingRecipe extends StonecutterRecipe  {
 
     private static CompoundTag lastInput = null;
+    private String inputType = null;
+    private String outputType = null;
+
+    public FlavouredStonecuttingRecipe(ResourceLocation id, String group, Ingredient ingredient, ItemStack result, String inputType, String outputType) {
+        super(id, group, ingredient, result);
+        this.inputType = inputType;
+        this.outputType = outputType;
+    }
 
     public FlavouredStonecuttingRecipe(ResourceLocation id, String group, Ingredient ingredient, ItemStack result) {
         super(id, group, ingredient, result);
@@ -27,11 +35,15 @@ public class FlavouredStonecuttingRecipe extends StonecutterRecipe  {
             ItemStack stack = container.getItem(0);
             boolean matches = ingredient.test(stack);
 
+            CompoundTag tag = stack.getTag();
             if (level.isClientSide) {
                 if (!stack.isEmpty() && matches) {
                     // cache input for GUI button
-                    FlavouredStonecuttingRecipe.cacheInput(stack.getTag());
+                    FlavouredStonecuttingRecipe.cacheInput(tag);
                 }
+            }
+            if (tag.contains("TeaType") && inputType != null) {
+                return matches && inputType.equals(tag.getString("TeaType"));
             }
 
             return matches;
@@ -50,8 +62,10 @@ public class FlavouredStonecuttingRecipe extends StonecutterRecipe  {
 
         // use correct NBT data for output
         CompoundTag tag = input.hasTag() ? input.getTag().copy() : new CompoundTag();
-        if (!tag.contains("TeaFlavour")) {
+        if (!tag.contains("TeaFlavour") && inputType == null) {
             tag.putString("TeaFlavour", "STANDARD"); // some leaves are not flavoured, but all fannings must be
+        } else if (outputType != null) {
+            tag.putString("TeaType", outputType);
         }
         resultStack.setTag(tag.copy());
 
@@ -67,7 +81,12 @@ public class FlavouredStonecuttingRecipe extends StonecutterRecipe  {
             CompoundTag tag = lastInput;
 
             if (tag != null) {
-                resultItem.setTag(tag.copy());
+                if (outputType != null) {
+                    CompoundTag copy = tag.copy();
+                    copy.putString("TeaType", outputType);
+                    resultItem.setTag(copy);
+                } else 
+                    resultItem.setTag(tag.copy());
             }
         }
 

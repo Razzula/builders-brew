@@ -1,0 +1,10 @@
+{
+    "type": "buildersbrew:crafting_flavoured",
+    "ingredient": {
+        "item": "buildersbrew:tea_leaf"
+    },
+    "result": "buildersbrew:tea_leaf",
+    "input_type": "GREEN",
+    "output_type": "OOLONG",
+    "count": 1
+}
