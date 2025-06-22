@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "buildersbrew:block/lemon_sapling"
+  }
+}

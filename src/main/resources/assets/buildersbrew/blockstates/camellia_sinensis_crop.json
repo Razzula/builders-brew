@@ -24,5 +24,7 @@
         "age=7": {
             "model": "buildersbrew:block/camellia_sinensis_stage5"
         }
-    }
+    },
+    "forge_marker": 1,
+    "render_type": "cutout"
 }

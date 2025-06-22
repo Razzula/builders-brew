@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "buildersbrew:block/lemon_log",
+    "side": "buildersbrew:block/lemon_log"
+  }
+}
