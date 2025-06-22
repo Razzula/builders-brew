@@ -27,7 +27,7 @@ public class ClientModEvents {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CAMELLIA_SINENSIS_CROP.get(), RenderType.cutout());
 
         event.enqueueWork(() -> {
-            ItemProperties.register(ModItems.TEA_LEAF.get(), rl("tea_type"),
+            ItemProperties.register(ModItems.TEA_LEAF.get(), new ResourceLocation("tea_type"),
                 (ItemStack stack, @Nullable ClientLevel level, @Nullable LivingEntity entity, int seed) -> {
                     return TeaType.getTeaType(stack).ordinal();
                 }
@@ -35,7 +35,7 @@ public class ClientModEvents {
         });
 
         event.enqueueWork(() -> {
-            ItemProperties.register(ModItems.DRIED_TEA_LEAF.get(), rl("tea_type"),
+            ItemProperties.register(ModItems.DRIED_TEA_LEAF.get(), new ResourceLocation("tea_type"),
                 (ItemStack stack, @Nullable ClientLevel level, @Nullable LivingEntity entity, int seed) -> {
                     return TeaType.getTeaType(stack).ordinal();
                 }
@@ -43,7 +43,7 @@ public class ClientModEvents {
         });
 
         event.enqueueWork(() -> {
-            ItemProperties.register(ModItems.TEA_FANNINGS.get(), rl("tea_variant"),
+            ItemProperties.register(ModItems.TEA_FANNINGS.get(), new ResourceLocation("tea_variant"),
                 (ItemStack stack, @Nullable ClientLevel level, @Nullable LivingEntity entity, int seed) -> {
                     TeaType type = TeaType.getTeaType(stack);
                     if (type == TeaType.BLACK) {
@@ -56,7 +56,7 @@ public class ClientModEvents {
         });
 
         event.enqueueWork(() -> {
-            ItemProperties.register(ModItems.TEA_BAG.get(), rl("tea_variant"),
+            ItemProperties.register(ModItems.TEA_BAG.get(), new ResourceLocation("tea_variant"),
                 (ItemStack stack, @Nullable ClientLevel level, @Nullable LivingEntity entity, int seed) -> {
                     TeaType type = TeaType.getTeaType(stack);
                     if (type == TeaType.BLACK) {
@@ -69,7 +69,7 @@ public class ClientModEvents {
         });
 
         event.enqueueWork(() -> {
-            ItemProperties.register(ModItems.MUG_TEA.get(), rl("tea_variant"),
+            ItemProperties.register(ModItems.MUG_TEA.get(), new ResourceLocation("tea_variant"),
                 (ItemStack stack, @Nullable ClientLevel level, @Nullable LivingEntity entity, int seed) -> {
                     TeaType type = TeaType.getTeaType(stack);
                     if (type == TeaType.BLACK) {
@@ -82,20 +82,12 @@ public class ClientModEvents {
         });
 
         event.enqueueWork(() -> {
-            ItemProperties.register(ModItems.TEA_BOX_ITEM.get(), rl("tea_flavour"),
+            ItemProperties.register(ModItems.TEA_BOX_ITEM.get(), new ResourceLocation("tea_flavour"),
                 (ItemStack stack, @Nullable ClientLevel level, @Nullable LivingEntity entity, int seed) -> {
                     return TeaFlavour.getTeaFlavour(stack).ordinal();
                 }
             );
         });
-    }
-
-    private static ResourceLocation rl(String path) {
-        return new ResourceLocation("buildersbrew", path); // TODO this is deprecated, but everything else breaks NBTs
-        // return Objects.requireNonNull(
-        //     ResourceLocation.tryBuild("buildersbrew", path),
-        //     "Invalid ResourceLocation: buildersbrew:" + path
-        // );
     }
 
 }
