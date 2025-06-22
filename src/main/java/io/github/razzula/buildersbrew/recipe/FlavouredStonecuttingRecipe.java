@@ -48,13 +48,12 @@ public class FlavouredStonecuttingRecipe extends StonecutterRecipe  {
         ItemStack input = container.getItem(0);
         ItemStack resultStack = super.assemble(container, registryAccess).copy();
 
-        if (input.hasTag()) {
-            // use correct NBT data for output
-            CompoundTag tag = input.getTag();
-            if (tag != null) {
-                resultStack.setTag(tag.copy());
-            }
+        // use correct NBT data for output
+        CompoundTag tag = input.hasTag() ? input.getTag().copy() : new CompoundTag();
+        if (!tag.contains("TeaFlavour")) {
+            tag.putString("TeaFlavour", "STANDARD"); // some leaves are not flavoured, but all fannings must be
         }
+        resultStack.setTag(tag.copy());
 
         return resultStack;
     }

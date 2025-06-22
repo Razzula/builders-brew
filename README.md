@@ -8,8 +8,20 @@ A Minecraft mod that adds teas to the game.
 
 ### Pre-requisites
 - [Java 17](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
-- [Minecraft Forge](https://files.minecraftforge.net/)
-- [Minecraft 1.20.1](https://www.minecraft.net/en-us/download/server)
+<!-- - [Minecraft Forge](https://files.minecraftforge.net/) -->
+<!-- - [Minecraft 1.20.1](https://www.minecraft.net/en-us/download/server) -->
+- Minecraft Forge and Minecraft 1.20.1 are included in the `gradlew`
+
+```bash
+sudo apt install openjdk-17-jdk
+```
+
+## Usage
+
+```bash
+./gradlew build
+./gradlew runClient
+```
 
 ## Disclaimer
 This is a **fan-made project** and is **not** affiliated with, endorsed by, or sponsored by Bettys & Taylors of Harrogate Ltd.
